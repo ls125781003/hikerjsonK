@@ -1,0 +1,26 @@
+function h5音乐播放器(arr) {
+if (MY_PAGE = 1) {
+	var 本地x5 = getPath('hiker://files/rules/dzHouse/html/h5音乐播放器.html');
+	if (fileExist(本地x5) == false) {
+		var 远程x5 = request('https://gh-proxy.com/https://raw.githubusercontent.com/ls125781003/hikerjsonK/main/h5音乐播放器.html');
+		if (远程x5.indexOf("player-content") > 0) {
+			writeFile(本地x5, 远程x5);
+		} else {
+			confirm({
+				title: '❌错误提示',
+				content: 'h5音乐播放器导入出错\n请到道长仓库手动导入'
+			})
+		}
+	}
+	arr.push({
+		col_type: 'x5_webview_single',
+		desc: '300&&float',
+		url: 本地x5,
+		extra: {
+			ua: MOBILE_UA,
+			autoPlay: true,
+			imgLongClick: false
+		},
+	});
+}
+}
