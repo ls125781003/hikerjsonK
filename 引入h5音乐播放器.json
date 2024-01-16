@@ -2,7 +2,7 @@ function h5音乐播放器(arr) {
 if (MY_PAGE = 1) {
 	var 本地x5 = getPath('hiker://files/rules/dzHouse/html/h5音乐播放器.html');
 	if (fileExist(本地x5) == false) {
-		var 远程x5 = request('https://gh-proxy.com/https://raw.githubusercontent.com/ls125781003/hikerjsonK/main/h5音乐播放器.html');
+		var 远程x5 = request('http://hiker.nokia.press/hikerule/rulelist.json?id=5389');
 		if (远程x5.indexOf("player-content") > 0) {
 			writeFile(本地x5, 远程x5);
 		} else {
